@@ -8,7 +8,7 @@ body {
     color: rgb(54, 64, 38);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-nav{ 
+nav, header{ 
     background-color: lightgreen;
 }  
 
@@ -24,4 +24,29 @@ nav a {
 nav a.selected {
     background-color: brown;
     color: lightseagreen;
+}
+main{
+    padding: 1rem;
+    text-align: center;
+}
+#home-nav a {
+    display: inline-block;
+    margin: 2rem;
+    color: lightcyan;
+    text-shadow: 1px 0 0 black;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+#home-nav img{
+    border-radius: 3rem;
+    box-shadow: 1rem 1rem 1rem 0 black;
+    border: 1rem solid white;
+}
+#home-nav a .title{
+    margin-top: -3rem;
+    z-index: 100rem;
+}
+.carousel {
+    width: 335px;
+    margin: auto;
 }
