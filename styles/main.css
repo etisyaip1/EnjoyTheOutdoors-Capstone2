@@ -47,6 +47,29 @@ main{
     z-index: 100rem;
 }
 .carousel {
-    width: 335px;
+    width: 550px;
     margin: auto;
+}
+.ss,
+.park-card{
+    background-color: black;
+    margin: 1rem;
+    padding: 1rem;
+    color:whitesmoke;
+    display: inline-block;
+}
+.ss{
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+#videoContainer {
+    margin: auto;
+    text-align: center;
+    display:block;
+    align-items:center;
+}
+h2,
+h1 {
+    text-align: center;
 }

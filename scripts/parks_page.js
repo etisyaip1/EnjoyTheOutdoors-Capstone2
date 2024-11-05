@@ -1,29 +1,49 @@
-function addPark(parkTypeName, parkTypeSelect){
-    parkTypeSelect.appendChild( new Option(parkTypeName));
+function addPark(parkTypeName, parkTypeSelect) {
+    parkTypeSelect.appendChild(new Option(parkTypeName));
 }
+
 function addLocation(text, target) {
     target.appendChild(new Option(text));
 }
-function Park(parkObject){
+
+function Park(parkObject) {
+    
     const e = document.createElement("div");
-    e.innerHTML = parkObject.LocationName;
+    e.className = "park-card";
+    e.innerHTML = `
+    
+    <b>${parkObject.LocationName}</b> <br>
+    ${parkObject.State} <br>
+    ${parkObject.ZipCode} <br>
+    ${parkObject.Phone} <br>
+    ${parkObject.Latitude} <br>
+    ${parkObject.Longitude} <br>
+    `;
     return e;
 }
-function renderParks(){
+
+function renderParks() {
     const results = document.getElementById("results");
     const selectedType = parkTypeSelect.value;
     const selectedLocation = parkLocationSelect.value;
-    results.innerHTML = ""; 
+
+    results.innerHTML = "";
+
     let filtered = nationalParksArray;
-    if(selectedType){
-        filtered = filtered.filter(p=>p.LocationName.toLowerCase().includes(selectedType.toLowerCase()));
+    if (selectedType) {
+        filtered = filtered.filter(p => p.LocationName.toLowerCase().includes(selectedType.toLowerCase()));
     }
-    if(selectedLocation){
-        filtered = filtered.filter(p=>p.State.toLowerCase() === selectedLocation.toLowerCase())        
+    if (selectedLocation) {
+        filtered = filtered.filter(p => p.State.toLowerCase() === selectedLocation.toLowerCase());
     }
-    filtered.forEach( p => results.appendChild(Park(p)));
-    if(filtered.length < 1){
-        results.innerHTML = "No results found matching the filter.";
+
+    filtered.forEach(p => {
+        const card = Park(p);
+        results.appendChild(card);
+    });
+
+    if (filtered.length < 1) {
+        results.innerHTML = "No results found matching the filter!";
     }
 }
 function onContent() {

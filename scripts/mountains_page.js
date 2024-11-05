@@ -30,10 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             //to do: fetch sunset (pdf) // function that can "fetch" the sunrise/sunset times
             const data = await getSunsetForMountain(m.coords.lat, m.coords.lng);
-            results.innerHTML += "<br> sunrise - sunset: ";
-             results.innerHTML += data.results.sunrise;
-             results.innerHTML += " - ";
-             results.innerHTML += data.results.sunset;
+            results.innerHTML += `<div class="ss" > sunrise - sunset: ${data.results.sunrise} - ${data.results.sunset}  </div>`;
+        
+             
         }
     });
 });
