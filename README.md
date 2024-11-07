@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # "Golden Arc's National Treasures" 
 Golden Arc's National Treasures is a family owned nature conservatory dedicated to the breathtaking landscapes of mountains and national parks across the country. From majestic mountains to serene park landscapes, it showcases the natural beauty and diversity of these treasured places.
 ## Homepage
@@ -18,3 +19,6 @@ Photo Slideshow: automatic slideshow showcasing the beauty of these national tre
 National Parks YT Video: a short video showcasing the treaures of our parks here at Golden Arc's. 
 !(home)
 !(home)
+=======
+
+>>>>>>> 50b241d002a66da905ecc77beafb09537843761e
