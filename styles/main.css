@@ -44,7 +44,7 @@ main{
 }
 #home-nav a .title{
     margin-top: -3rem;
-    z-index: 100rem;
+    z-index: 100;
 }
 .carousel {
     width: 550px;
@@ -52,10 +52,13 @@ main{
 }
 .ss,
 .park-card{
-    background-color: black;
+    background-color: rgb(233, 134, 41);
+    border-radius: 10%;
+    border: 4px solid;
+    border-color: brown;
     margin: 1rem;
     padding: 1rem;
-    color:whitesmoke;
+    color: rgb(54, 64, 38);
     display: inline-block;
 }
 .ss{
@@ -68,6 +71,7 @@ main{
     text-align: center;
     display:block;
     align-items:center;
+    border: none;
 }
 h2,
 h1 {
