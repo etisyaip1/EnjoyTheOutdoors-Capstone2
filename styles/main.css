@@ -20,7 +20,11 @@ nav a {
     padding: 0.5rem;
     text-decoration: none;
 }
-
+footer nav a {
+    background-color: brown;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
 nav a.selected {
     background-color: brown;
     color: lightseagreen;
@@ -30,17 +34,18 @@ main{
     text-align: center;
 }
 #home-nav a {
-    display: inline-block;
-    margin: 2rem;
+    text-align: center; 
     color: lightcyan;
     text-shadow: 1px 0 0 black;
     font-size: 1.2rem;
     text-decoration: none;
 }
-#home-nav img{
+#home-nav img {
     border-radius: 3rem;
     box-shadow: 1rem 1rem 1rem 0 black;
     border: 1rem solid white;
+    width: 475px;
+    height: 380px;
 }
 #home-nav a .title{
     margin-top: -3rem;
@@ -76,4 +81,16 @@ main{
 h2,
 h1 {
     text-align: center;
+}
+#home-nav {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin: auto;
+    gap: 2rem; 
+}
+.b img {
+    width: 500px;
+    height: 500px;
+    margin: auto;
 }

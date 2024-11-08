@@ -13,11 +13,11 @@ function Park(parkObject) {
     e.innerHTML = `
     
     <b>${parkObject.LocationName}</b> <br>
-    ${parkObject.State} <br>
-    ${parkObject.ZipCode} <br>
-    ${parkObject.Phone} <br>
-    ${parkObject.Latitude} <br>
-    ${parkObject.Longitude} <br>
+    State: ${parkObject.State} <br>
+    Zip Code: ${parkObject.ZipCode} <br>
+    Phone Number: ${parkObject.Phone} <br>
+    Latitude: ${parkObject.Latitude} <br>
+    Longitude: ${parkObject.Longitude} <br>
     `;
     return e;
 }
