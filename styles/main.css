@@ -90,9 +90,10 @@ h1 {
     gap: 2rem; 
 }
 .b img {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    /* height: 500px; */
     margin: auto;
+    /* object-fit: contain; */
 }
 .btn-custom {
     border: 2px solid rgb(40, 42, 37); /* Darker green outline */
@@ -104,4 +105,8 @@ h1 {
     background-color: lightseagreen; 
     color: lightgoldenrodyellow; 
   }
-  
+.card{
+    width: 300px;
+    margin: auto;
+
+}
